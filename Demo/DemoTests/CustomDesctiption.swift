@@ -8,13 +8,12 @@
 import Testing
 
 @Suite("CustomDesctiption Test case Success")
-struct CustomDesctiption {
+struct CustomDesctiptionSuccessTestSuite {
 
 
 }
 
 @Suite("CustomDesctiption Test case Failure")
-struct Failure {
-    @Test func receiveJobOffer() { ... }
-    @Test func declinedJobOffer() { ... }
-  }
+struct CustomDesctiptionFailureTestSuite {
+    
+}
