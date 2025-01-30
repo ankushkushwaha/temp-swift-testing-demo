@@ -14,7 +14,7 @@ struct DisabledTests {
         #expect(1==1)
     }
     
-    @Test()
+    @Test(.enabled(if: 1==2))
     func test2() {
         #expect(1==1)
     }
