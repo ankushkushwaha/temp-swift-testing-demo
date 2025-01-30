@@ -12,3 +12,9 @@ struct CustomDesctiption {
 
 
 }
+
+@Suite("CustomDesctiption Test case Failure")
+struct Failure {
+    @Test func receiveJobOffer() { ... }
+    @Test func declinedJobOffer() { ... }
+  }
