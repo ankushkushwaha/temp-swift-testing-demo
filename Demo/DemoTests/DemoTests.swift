@@ -9,8 +9,15 @@ import Testing
 
 struct DemoTests {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    @Test func myFirstTest() {
+      #expect(1 == 1)
     }
+}
 
+@Suite struct DemoTestSuite {
+    
+  @Test func myFirstTest() {
+      #expect(1 == 1)
+  }
+    
 }
