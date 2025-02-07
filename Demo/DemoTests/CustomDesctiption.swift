@@ -17,3 +17,30 @@ struct CustomDesctiptionSuccessTestSuite {
 struct CustomDesctiptionFailureTestSuite {
     
 }
+
+
+
+@Suite("FetchData Tests") struct FetchData {
+    
+    @Suite("UserDataFetch Tests") struct UserDataFetch {
+        
+        @Test("FetchDataSuccess") func success() {
+            
+        }
+        
+        @Test("FetchDataSuccess") func failure() {
+            
+        }
+    }
+    
+    @Suite struct PostsDataFetch {
+        
+        @Test("PostsDataFetchSuccess") func success() {
+            
+        }
+        
+        @Test("PostsDataFetchFailure") func failure() {
+            
+        }
+    }
+}
