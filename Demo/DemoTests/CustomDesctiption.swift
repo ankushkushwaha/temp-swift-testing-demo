@@ -28,18 +28,7 @@ struct CustomDesctiptionFailureTestSuite {
             
         }
         
-        @Test("FetchDataSuccess") func failure() {
-            
-        }
-    }
-    
-    @Suite struct PostsDataFetch {
-        
-        @Test("PostsDataFetchSuccess") func success() {
-            
-        }
-        
-        @Test("PostsDataFetchFailure") func failure() {
+        @Test("FetchDataFailure") func failure() {
             
         }
     }
