@@ -21,13 +21,17 @@ func displayAlertMessage(paymentType: PaymentType) {
 
 enum PaymentType: CaseIterable {
     case creditCard, payNow, nets, onBoard
-
+    
     var description: String {
         switch self {
-        case .creditCard: return "Credit Card"
-        case .payNow: return "PayNow"
-        case .nets: return "NETS"
-        case .onBoard: return "On Board Payment"
+        case .creditCard: 
+            return "Credit Card"
+        case .payNow:
+            return "PayNow"
+        case .nets: 
+            return "NETS"
+        case .onBoard: 
+            return "On Board Payment"
         }
     }
 }
