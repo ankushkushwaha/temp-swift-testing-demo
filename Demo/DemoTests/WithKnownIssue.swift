@@ -10,6 +10,6 @@ import Testing
 @Test func thisFunctionShouldFail() async {
     
     withKnownIssue {
-      #expect(1==2)
+      #expect(1 == 2)
    }
 }
