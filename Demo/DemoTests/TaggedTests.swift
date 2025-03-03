@@ -13,12 +13,12 @@ private extension Tag {
 }
 
 
-class TaggedTests {
+@Suite struct TaggedTests {
     
     @Suite struct UserDataFetch {
         
         @Test(.tags(.successTag)) func success() {
-
+            #expect(1==1)
         }
         
         @Test(.tags(.failureTag)) func failure() {
