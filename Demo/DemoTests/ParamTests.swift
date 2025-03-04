@@ -7,7 +7,10 @@
 
 import Testing
 
-@Test(arguments: [PaymentType.creditCard, .payNow, .nets, .onBoard])
+@Test(arguments: [PaymentType.creditCard,
+                  .payNow,
+                  .nets,
+                  .onBoard])
 func displayAlertMessage(paymentType: PaymentType) {
     
   let sut = PaymentAdditionalItemViewModel(
@@ -18,6 +21,29 @@ func displayAlertMessage(paymentType: PaymentType) {
 }
 
 
+@Test(.bug("https://github.com/Solera-Spireon/OMM-KMP"),
+      arguments: [
+    (PaymentType.creditCard, FoodType.breakfast),
+    (PaymentType.payNow, FoodType.lunch)
+])
+func displayAlertMessage(paymentType: PaymentType,
+                         foodType: FoodType) {
+    
+//    print("paymentType: \(paymentType) -- FoodType: \(foodType)")
+ 
+        let sut = PaymentAdditionalItemViewModel(
+        payment: paymentType
+    )
+    
+  #expect(sut.payment.description == paymentType.description)
+}
+
+
+
+enum FoodType {
+    case breakfast, lunch, dinner
+
+}
 
 enum PaymentType: CaseIterable {
     case creditCard, payNow, nets, onBoard
