@@ -7,14 +7,17 @@
 
 import Testing
 
-struct DemoTests {
 
+struct DemoTests {
+    
     @Test func myFirstTest() {
-      #expect(1 == 1)
+     
+        #expect(1 == 1)
+
     }
 }
 
-@Suite struct DemoTestSuite {
+struct DemoTestSuite {
     
   @Test func myFirstTest() {
       #expect(1 == 1)
