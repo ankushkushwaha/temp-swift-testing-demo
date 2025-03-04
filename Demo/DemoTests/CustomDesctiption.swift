@@ -32,4 +32,16 @@ struct CustomDesctiptionFailureTestSuite {
             
         }
     }
+    
+    @Suite("FetchUserProfile Tests") struct FetchUserProfile {
+        
+        @Test("FetchDataSuccess") func success() {
+            
+        }
+        
+        @Test("FetchDataFailure") func failure() {
+            
+        }
+    }
+}
 }
