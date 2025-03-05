@@ -44,4 +44,19 @@ struct CustomDesctiptionFailureTestSuite {
         }
     }
 }
+
+
+extension TaggedTests {
+    
+    @Suite struct PostsDataFetch1 {
+        
+        @Test func success() {
+            
+        }
+        
+        @Test func failure() {
+            
+        }
+    }
 }
+
